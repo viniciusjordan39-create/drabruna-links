@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dra. Bruna Ghetti — Ginecologista especialista em Saúde Íntima, Menopausa e Longevidade. Cuiabá, MT.">
+<meta property="og:title" content="Dra. Bruna Ghetti — Saúde Íntima & Longevidade">
+<meta property="og:description" content="Transformando e cuidando de mulheres. Agende sua consulta.">
+<meta property="og:image" content="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/drabruna.png">
+<meta property="og:type" content="website">
+<title>Dra. Bruna Ghetti — Saúde Íntima, Menopausa e Longevidade</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjgiIGZpbGw9IiNDNDgwNkEiLz4KPHRleHQgeD0iNTAlIiB5PSI1NCUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjMyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkJHPC90ZXh0Pgo8L3N2Zz4=" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #F9F6EF;
+    --brown: #3B1F1A;
+    --gold: #C4806A;
+    --muted: #9E7B6B;
+    --light: #EDE0D4;
+    --radius: 10px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  /* HERO */
+  .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    padding-top: 1.5rem;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 360px;
+    display: block;
+  }
+
+  @media (min-width: 480px) {
+    .hero img { max-width: 420px; }
+    .cards { padding: 0 1rem; }
+    .card-link img { border-radius: var(--radius); }
+    .section-wrap { margin: 28px 1rem 10px; width: calc(100% - 2rem); }
+    .cta-main { width: calc(100% - 2rem); }
+    .maps-btn { width: calc(100% - 2rem); }
+    .headline { font-size: 30px; }
+  }
+
+  /* IDENTITY */
+  .identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+
+  .identity-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--brown);
+    letter-spacing: 0.12em;
+  }
+
+  .identity-crm {
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+
+  .divider {
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.6;
+    margin: 12px auto;
+  }
+
+  .tagline {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--brown);
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 14px;
+    padding: 0 0.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* MAPS BUTTON */
+  .maps-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border: 0.5px solid var(--light);
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.5);
+    transition: background 0.18s, border-color 0.18s;
+    width: calc(100% - 3rem);
+    margin: 10px 0 0;
+  }
+
+  .maps-btn:hover {
+    background: rgba(255,255,255,0.9);
+    border-color: var(--gold);
+  }
+
+  .maps-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .maps-icon svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: var(--muted);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .maps-text { flex: 1; }
+
+  .maps-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--brown);
+  }
+
+  .maps-sub {
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+
+  .maps-arrow {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.6;
+  }
+
+  /* CTA */
+  .cta-main {
+    margin-top: 16px;
+    background: var(--gold);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px 0;
+    cursor: pointer;
+    border-radius: var(--radius);
+    width: calc(100% - 3rem);
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+  }
+  .cta-main:hover { background: var(--brown); }
+
+  /* SOCIALS */
+  .socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+
+  .social-btn {
+    width: 36px;
+    height: 36px;
+    border: 0.5px solid var(--gold);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.18s;
+    border-radius: 50%;
+  }
+
+  .social-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: var(--muted);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.18s;
+  }
+
+  .social-btn:hover { background: var(--brown); }
+  .social-btn:hover svg { stroke: var(--bg); }
+
+  /* SECTION */
+  .section-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 24px 1.5rem 10px;
+    width: calc(100% - 3rem);
+  }
+
+  .section-line {
+    flex: 1;
+    height: 0.5px;
+    background: var(--gold);
+    opacity: 0.35;
+  }
+
+  .section-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.18em;
+    white-space: nowrap;
+  }
+
+  /* CARDS */
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 1.5rem;
+  }
+
+  .card-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border-radius: var(--radius);
+    overflow: hidden;
+    line-height: 0;
+    transition: opacity 0.18s, transform 0.18s;
+    box-shadow: 0 2px 12px rgba(59,31,26,0.08);
+  }
+
+  .card-link:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59,31,26,0.13);
+  }
+
+  .card-link:active { transform: translateY(0); opacity: 0.88; }
+
+  .card-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+  }
+
+  /* BLOG LINK */
+  .blog-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border: 0.5px solid var(--light);
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.5);
+    transition: background 0.18s, border-color 0.18s;
+    width: calc(100% - 3rem);
+    margin-top: 10px;
+  }
+
+  .blog-link:hover {
+    background: rgba(255,255,255,0.9);
+    border-color: var(--gold);
+  }
+
+  .blog-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .blog-icon svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: var(--muted);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .blog-text { flex: 1; }
+
+  .blog-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--brown);
+    line-height: 1.2;
+  }
+
+  .blog-sub {
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+
+  .blog-arrow {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.6;
+  }
+
+  /* FOOTER */
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-text {
+    font-size: 9px;
+    color: #C4B5AA;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/drabruna.png" alt="Dra. Bruna Ghetti" />
+  </div>
+
+  <div class="identity">
+    <div class="identity-name">Dra. Bruna Ghetti</div>
+    <div class="identity-crm">CRM 65755 · RQE 26322</div>
+    <div class="divider"></div>
+    <div class="headline">Você já não se reconhece<br>no próprio corpo?</div>
+    <div class="tagline" style="margin-top:12px">Saúde Íntima · Menopausa · Longevidade</div>
+
+    <a class="cta-main" href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20da%20p%C3%A1gina%20de%20links%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+      Agende sua consulta
+    </a>
+
+    <div class="socials">
+      <a class="social-btn" href="https://www.instagram.com/brunaghetti/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.youtube.com/@DraBrunaGhetti" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+      </a>
+      <a class="social-btn" href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20da%20p%C3%A1gina%20de%20links%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+      <a class="social-btn" href="https://drabruna-blog.lovable.app/" target="_blank" rel="noopener" aria-label="Blog">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </a>
+      <a class="social-btn" href="https://drabrunaghetti.com.br" target="_blank" rel="noopener" aria-label="Site">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- LIVRO PRIMEIRO — menor barreira, apresenta autoridade -->
+  <div class="section-wrap">
+    <div class="section-line"></div>
+    <span class="section-label">Livro</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cards">
+    <a class="card-link" href="https://quarentei.vercel.app/" target="_blank" rel="noopener" aria-label="Quarentei — Livro físico">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardQUARENTEI.png" alt="Quarentei — O guia médico que toda mulher 40+ merecia ter" />
+    </a>
+  </div>
+
+  <!-- TRATAMENTOS -->
+  <div class="section-wrap">
+    <div class="section-line"></div>
+    <span class="section-label">Tratamentos</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cards">
+    <a class="card-link" href="https://lift-hd-form-o4ua.vercel.app/" target="_blank" rel="noopener" aria-label="Lift HD Íntimo">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardLIFThd.png" alt="Lift HD Íntimo — Transformação íntima à laser" />
+    </a>
+  </div>
+
+  <!-- PROGRAMAS -->
+  <div class="section-wrap">
+    <div class="section-line"></div>
+    <span class="section-label">Programas</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cards">
+    <a class="card-link" href="https://safira-formulario.vercel.app/" target="_blank" rel="noopener" aria-label="Plano Safira">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardSAFIRA.png" alt="Plano Safira — Adeus menopausa" />
+    </a>
+    <a class="card-link" href="https://drabrunaghetti.com.br/jade/" target="_blank" rel="noopener" aria-label="Plano Jade">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardJADE.png" alt="Plano Jade — Equilíbrio e emagrecimento" />
+    </a>
+    <a class="card-link" href="https://drabrunaghetti.com.br/esmeralda/" target="_blank" rel="noopener" aria-label="Plano Esmeralda">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardESMERALDA.png" alt="Plano Esmeralda — Transformação com autenticidade" />
+    </a>
+  </div>
+
+  <!-- LOJA -->
+  <div class="section-wrap">
+    <div class="section-line"></div>
+    <span class="section-label">Loja</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cards">
+    <a class="card-link" href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20da%20p%C3%A1gina%20de%20links%20e%20tenho%20interesse%20no%20Spa%20%C3%8Dntimo." target="_blank" rel="noopener" aria-label="Spa Íntimo">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardSPAINTIMO.png" alt="Spa Íntimo — Cuidado e bem-estar" />
+    </a>
+  </div>
+
+  <!-- E-BOOKS — captura de lead para quem ainda não está pronto -->
+  <div class="section-wrap">
+    <div class="section-line"></div>
+    <span class="section-label">E-books gratuitos</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cards">
+    <a class="card-link" href="https://drive.google.com/uc?export=download&id=1R-KDd-FJA3JS6CHst-u2tlVc1KbP6AkF" target="_blank" rel="noopener" aria-label="Pausa na Menopausa">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/links/cardPAUSA.png" alt="Pausa na Menopausa — E-book gratuito" />
+    </a>
+    <a class="card-link" href="https://drive.google.com/uc?export=download&id=1dY6YvCK_PrI9fJJwozoxVbViQxmwqbAk" target="_blank" rel="noopener" aria-label="Celebre sua Intimidade">
+      <img src="https://raw.githubusercontent.com/viniciusjordan39-create/paginalinks/main/cardCELEBRE.png" alt="Celebre sua Intimidade — E-book gratuito" />
+    </a>
+  </div>
+
+  <!-- LOCALIZAÇÃO -->
+  <a class="maps-btn" href="https://google.com/maps/place/Volup+Instituto+%7C+Spa+%7C+Limpeza+de+Pele+%7C+Injetáveis+%7C+Soroterapia+em+Cuiabá/data=!4m2!3m1!1s0x0:0x274d7a36613ac2df?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener">
+    <div class="maps-icon">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    </div>
+    <div class="maps-text">
+      <div class="maps-title">Como chegar à clínica</div>
+      <div class="maps-sub">Volup Instituto · Cuiabá, MT</div>
+    </div>
+    <svg class="maps-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+
+  <!-- FOOTER -->
+  <div class="footer-socials">
+    <a class="social-btn" href="https://www.instagram.com/brunaghetti/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <a class="social-btn" href="https://www.youtube.com/@DraBrunaGhetti" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+    </a>
+    <a class="social-btn" href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20da%20p%C3%A1gina%20de%20links%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </a>
+    <a class="social-btn" href="https://drabruna-blog.lovable.app/" target="_blank" rel="noopener" aria-label="Blog">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    </a>
+    <a class="social-btn" href="https://drabrunaghetti.com.br" target="_blank" rel="noopener" aria-label="Site">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </a>
+  </div>
+
+  <p class="footer-text">© Dra. Bruna Ghetti · Todos os direitos reservados</p>
+
+</div>
+</body>
+</html>
